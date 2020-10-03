@@ -8,22 +8,27 @@ body {
     background-color: #d9dcd6;
 }
 
-.header {
+/* the below type selectors where the type is header, were previously referenced by a class ".header" because there eas no proper header in the html file */
+
+
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+header h1 .seo {
     color: #d9dcd6;
 }
 
+/*as with the header label, there was not a nav tag in the original html so it was referenced by the class ".header" followed by the type selector,
+ that is no longer necessary because the elements are a child node of header*/
  nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,15 +37,16 @@ body {
     font-size: 20px;
 }
 
+/*the .header class was removed*/
 nav ul {
     list-style-type: none;
 }
-
+/*the .header class was removed*/
 nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/*Everything below this text remains the same as the beginning*/
 a {
     color: #ffffff;
     text-decoration: none;
@@ -198,3 +204,5 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
+
